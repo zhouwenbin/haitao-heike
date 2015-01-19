@@ -1,0 +1,65 @@
+.section{
+	background-repeat: no-repeat;
+	background-position: center top;
+	position: relative;
+	background-size: 100%;	
+}
+.section1{
+	background-image: url(../img/1.jpg);
+}
+.section2{
+	background-image: url(../img/2.jpg);
+}
+.section3{
+	background-image: url(../img/3.jpg);
+}
+.section4{
+	background-image: url(../img/4.jpg);
+}
+.section5{
+	background-image: url(../img/5.jpg);
+}
+.section6{
+	background-image: url(../img/6.jpg);
+}
+img{
+	position: absolute;
+}
+.section1-superman{
+	width: 52.81%;
+	top: 100%;
+	left: 25.78%;
+	-webkit-transition:top 0.5s;
+}
+.active .section1-superman{
+	top: 36.11%;
+}
+.section1-line{
+	top: 40.37%;
+	left: 50%;
+	-webkit-transform:translateX(-50%);
+	width: 0%;
+	-webkit-transition:width 0.25s 0.5s;
+}
+.active .section1-line{
+	width: 100%;
+}
+
+.section1-smoke{
+	width: 100%;
+	top: 57px;
+	opacity: 0;
+	-webkit-transition:opacity 0.5s 0.75s;
+}
+.active .section1-smoke{
+	opacity:1;
+}
+.section1-baby{
+	width:59.84%;
+	right: 0;
+	bottom:-300px;
+	-webkit-transition:bottom 0.5s 1.25s;
+}
+.active .section1-baby{
+	bottom:0;
+}

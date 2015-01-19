@@ -2,7 +2,7 @@
 	background-repeat: no-repeat;
 	background-position: center top;
 	position: relative;
-	background-size: 100%;	
+	background-size: cover;	
 }
 .section1{
 	background-image: url(../img/1.jpg);
@@ -29,37 +29,55 @@ img{
 	width: 52.81%;
 	top: 100%;
 	left: 25.78%;
-	-webkit-transition:top 0.5s 0.5s;
 }
 .active .section1-superman{
-	top: 36.11%;
+	-webkit-animation: section1-superman 0.5s forwards;
+}
+@-webkit-keyframes section1-superman{
+	100%{
+		top: 36.11%;
+	}
 }
 .section1-line{
 	top: 40.37%;
 	left: 50%;
 	-webkit-transform:translateX(-50%);
 	width: 0%;
-	-webkit-transition:width 0.25s 1s;
+	
 }
 .active .section1-line{
-	width: 100%;
+	-webkit-animation: section1-line 0.25s 0.5s forwards;
+}
+@-webkit-keyframes section1-line{
+	100%{
+		width:100%;
+	}
 }
 
 .section1-smoke{
 	width: 100%;
 	top: 57px;
 	opacity: 0;
-	-webkit-transition:opacity 0.5s 1.25s;
 }
 .active .section1-smoke{
-	opacity:1;
+	-webkit-animation: section1-smoke 0.5s 1.25s forwards;
 }
+@-webkit-keyframes section1-smoke{
+	100%{
+		opacity:1;
+	}
+}
+
 .section1-baby{
 	width:59.84%;
 	right: 0;
 	bottom:-300px;
-	-webkit-transition:bottom 0.5s 1.75s;
 }
 .active .section1-baby{
-	bottom:0;
+	-webkit-animation: section1-baby 0.5s 1.75s forwards;
+}
+@-webkit-keyframes section1-baby{
+	100%{
+		bottom:0;
+	}
 }

@@ -60,9 +60,23 @@ img{
 	opacity: 0;
 }
 .active .section1-smoke{
-	-webkit-animation: section1-smoke 0.5s 1.75s forwards;
+	-webkit-animation: section1-smoke 1.5s 2.5s forwards;
 }
 @-webkit-keyframes section1-smoke{
+	100%{
+		opacity:1;
+	}
+}
+.section1-smoke2{
+	width: 75.31%;
+	top: 120px;
+	left:19.22%;
+	opacity: 0;
+}
+.active .section1-smoke2{
+	-webkit-animation: section1-smoke2 1.5s 2.5s forwards;
+}
+@-webkit-keyframes section1-smoke2{
 	100%{
 		opacity:1;
 	}
@@ -74,7 +88,7 @@ img{
 	bottom:-300px;
 }
 .active .section1-baby{
-	-webkit-animation: section1-baby 0.5s 2.25s forwards;
+	-webkit-animation: section1-baby 1s 1.5s forwards;
 }
 @-webkit-keyframes section1-baby{
 	100%{

@@ -117,7 +117,7 @@ img{
 	-webkit-transform:translate3d(0,-100%,0);
 }
 .active .section2-text{
-	-webkit-animation:section2-text 0.5s linear 1.5s forwards;
+	-webkit-animation:section2-text 0.5s linear 2.5s forwards;
 }
 @-webkit-keyframes section2-text{
 	100%{
@@ -131,7 +131,7 @@ img{
 	opacity:0;
 }
 .active .section2-focus{
-	-webkit-animation:section2-focus 0.5s linear 2s forwards;
+	-webkit-animation:section2-focus 0.5s linear 3s forwards;
 }
 @-webkit-keyframes section2-focus{
 	70%,90%{
@@ -145,10 +145,10 @@ img{
 	width: 100%;
 	left: 0;
 	top: 84px;
-	-webkit-transform:translate3d(100%,0,0);
+	-webkit-transform:translate3d(50%,0,0);
 }
 .active .section2-superman{
-	-webkit-animation:section2-superman 0.5s linear 1s forwards;
+	-webkit-animation:section2-superman 0.5s linear 2s forwards;
 }
 @-webkit-keyframes section2-superman{
 	100%{
@@ -170,7 +170,7 @@ img{
 }
 .active .section2-smoke,
 .active .section2-smoke2{
-	-webkit-animation:section2-smoke 1s linear forwards;
+	-webkit-animation:section2-smoke 1s linear 1s forwards;
 }
 @-webkit-keyframes section2-smoke{
 	100%{

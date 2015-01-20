@@ -10,10 +10,7 @@
 <body>
 	<div class="main">
 		<section class="section section1">
-			<audio autoplay loop>
-			  <source src="audio/audio.mp3" type="audio/mpeg">
-			Your browser does not support the audio element.
-			</audio>
+			
 			<img src="img/section1-smoke.png" class="section1-smoke" alt="smoke">
 			<img src="img/section1-superman.png" class="section1-superman" alt="superman">
 			<img src="img/section1-line.png" class="section1-line" alt="line">
@@ -23,47 +20,70 @@
 		</section>
 		
 		<section class="section section2">
-			<img src="img/section2-smoke.png" class="section2-smoke" alt="smoke">
-			<img src="img/section2-superman.png" class="section2-superman" alt="superman">
-			<img src="img/section2-baby.png" class="section2-baby" alt="baby">
-			<img src="img/section2-focus.png" class="section2-focus" alt="focus">
-			<img src="img/section2-text.png" class="section2-text" alt="妈妈是神奇女侠因为她有千里眼我调皮地画地图她立马就换好不让我的屁屁难受">
-			<img src="img/section2-smoke2.png" class="section2-smoke2" alt="smoke">
+			
 		</section>
 		<section class="section section3">
-			<img src="img/section3-superman.jpg" class="section3-superman" alt="superman">
-			<img src="img/section3-text.png" class="section3-text" alt="不管多晚 妈妈都会把我喂得饱饱的 她还有顺风耳 我还没哭呢 奶粉就冲好了">
-			<img src="img/section3-baby.png" class="section3-baby" alt="baby">
+			
 
 			
 		</section>
 		<section class="section section4">
-			<img src="img/section4-smoke.png" class="section4-smoke" alt="smoke">
-			<img src="img/section4-superman.png" class="section4-superman" alt="superman">
-			<img src="img/section4-text.png" class="section4-text" alt="我出生后 妈妈的购物车变了 里面都是我的东西 像神奇女侠一样 闪电速度拿到">
-			<img src="img/section4-smoke2.png" class="section4-smoke2" alt="smoke">
-			<img src="img/section4-toy.png" class="section4-toy" alt="toy">
+			
 			
 		</section>
 		<section class="section section5">
-			<img src="img/section5-light.jpg" class="section5-light" alt="light">
-			<img src="img/section5-eye.png" class="section5-eye" alt="eye">
-			<img src="img/section5-text.png" class="section5-text" alt="神奇女侠是正义联盟创立人 她有让人说出真话的绳套 妈妈比她还厉害 每次都能看出好坏 只买对的东西 ">
+			
 			
 		</section>
 		<section class="section section6">
 			
 		</section>
 	</div>
-
+	<audio autoplay loop>
+	  <source src="audio/audio.mp3" type="audio/mpeg">
+	Your browser does not support the audio element.
+	</audio>
+	<img src="img/audio.png" width="32" class="audio" alt="">
 	<script src="js/jquery-1.10.2.min.js"></script>
 	<script src="lib/fullpage/js/jquery-ui-1.10.3.min.js"></script>
 	<script src="lib/fullpage/js/jquery.fullPage.min.js"></script>
 
 	<script>
 	$(function(){
-	    $('.main').fullpage();
 		document.getElementsByTagName('audio')[0].play();
+		$('.audio').(function(){
+			document.getElementsByTagName('audio')[0].pause();
+		})
+	    $('.main').fullpage({
+	    	afterLoad: function(anchorLink, index){
+	    		if(index == 2){
+					$('.section2').append('<img src="img/section2-smoke.png" class="section2-smoke">'+
+					'<img src="img/section2-superman.png" class="section2-superman">'+
+					'<img src="img/section2-baby.png" class="section2-baby">'+
+					'<img src="img/section2-focus.png" class="section2-focus">'+
+					'<img src="img/section2-text.png" class="section2-text">'+
+					'<img src="img/section2-smoke2.png" class="section2-smoke2">')
+				}
+				if(index == 3){
+					$('.section3').append('<img src="img/section3-superman.jpg" class="section3-superman">'+
+					'<img src="img/section3-text.png" class="section3-text">'+
+					'<img src="img/section3-baby.png" class="section3-baby">')
+				}
+				if(index == 4){
+					$('.section4').append('<img src="img/section4-smoke.png" class="section4-smoke">'+
+					'<img src="img/section4-superman.png" class="section4-superman">'+
+					'<img src="img/section4-text.png" class="section4-text">'+
+					'<img src="img/section4-smoke2.png" class="section4-smoke2">'+
+					'<img src="img/section4-toy.png" class="section4-toy">');
+				}
+				if(index == 5){
+					$('.section5').append('<img src="img/section5-light.jpg" class="section5-light">'+
+					'<img src="img/section5-eye.png" class="section5-eye">'+
+					'<img src="img/section5-text.png" class="section5-text">');
+				}
+			}
+	    });
+		
 	});
 	</script>
 </body>

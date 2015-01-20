@@ -5,22 +5,22 @@
 	background-size: cover;	
 }
 .section1{
-	background-image: url(../img/1.jpg);
+	background-image: url(../img/section1.jpg);
 }
 .section2{
-	background-image: url(../img/2.jpg);
+	background-image: url(../img/section2.jpg);
 }
 .section3{
-	background-image: url(../img/3.jpg);
+	background-image: url(../img/section3.jpg);
 }
 .section4{
-	background-image: url(../img/4.jpg);
+	background-image: url(../img/section4.jpg);
 }
 .section5{
-	background-image: url(../img/5.jpg);
+	background-image: url(../img/section5.jpg);
 }
 .section6{
-	background-image: url(../img/6.jpg);
+	background-image: url(../img/section6.jpg);
 }
 img{
 	position: absolute;
@@ -107,4 +107,81 @@ img{
 	100%{
 		-webkit-transform:translate3d(0,0,0);
 	}
+}
+
+.section2-text{
+	width:57.19%;
+	left: 39.46%;
+	top: 0;
+}
+.active .section2-text{
+	-webkit-animation:section2-text 0.5s linear 1.5s forwards;
+}
+@-webkit-keyframes section2-text{
+	0%{
+		-webkit-transform:translate3d(0,-100%,0);
+	}
+	100%{
+		-webkit-transform:translate3d(0,77px,0);
+	}
+}
+.section2-focus{
+	width:34.22%;
+	left: 55.93%;
+	top: 270px;
+}
+.active .section2-focus{
+	-webkit-animation:section2-focus 0.5s linear 2s forwards;
+}
+@-webkit-keyframes section2-focus{
+	0%,70%,90%{
+		opacity:0;
+	};	
+	60%,80%,100%{
+		opacity:1;
+	}
+}
+.section2-superman{
+	width: 100%;
+	left: 0;
+	top: 84px;
+}
+.active .section2-superman{
+	-webkit-animation:section2-superman 0.5s linear 1s forwards;
+}
+@-webkit-keyframes section2-superman{
+	0%{
+		-webkit-transform:translate3d(100%,0,0);
+	}
+	100%{
+		-webkit-transform:translate3d(0,0,,0);
+	}
+}
+.section2-smoke{
+	width: 100%;
+	left:0;
+	top: 0;
+}
+
+.section2-smoke2{
+	width: 65%;
+	left:27.97%;
+	top: 172px;
+}
+.active .section2-smoke,
+.active .section2-smoke2{
+	-webkit-animation:section2-smoke 1s linear forwards;
+}
+@-webkit-keyframes section2-smoke{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+.section2-baby{
+	width: 100%;
+	left:0;
+	top:263px;
 }

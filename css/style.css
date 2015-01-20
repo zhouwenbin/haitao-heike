@@ -145,6 +145,7 @@ img{
 	width: 100%;
 	left: 0;
 	top: 84px;
+	opacity: 0;
 	-webkit-transform:translate3d(50%,0,0);
 }
 .active .section2-superman{
@@ -152,6 +153,7 @@ img{
 }
 @-webkit-keyframes section2-superman{
 	100%{
+		opacity: 1;
 		-webkit-transform:translate3d(0,0,0);
 	}
 }

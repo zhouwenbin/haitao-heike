@@ -135,7 +135,7 @@ img{
 }
 @-webkit-keyframes section2-focus{
 	70%,90%{
-		opacity:0;
+		opacity:0.5;
 	}
 	60%,80%,100%{
 		opacity:1;
@@ -212,7 +212,7 @@ img{
 }
 @-webkit-keyframes section3-superman{
 	70%,90%{
-		opacity:0;
+		opacity:0.5;
 	}
 	60%,80%,100%{
 		opacity:1;
@@ -223,7 +223,11 @@ img{
 	left:0;
 	bottom:0;
 }
-
+.section4-superman{
+	width: 100%;
+	left:0;
+	bottom:0;
+}
 .section4-text{
 	width:58.28%;
 	left: 38.12%;

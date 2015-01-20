@@ -39,7 +39,7 @@
 			
 		</section>
 	</div>
-	<audio autoplay loop>
+	<audio id="audio" class="on" loop>
 	  <source src="audio/audio.mp3" type="audio/mpeg">
 	Your browser does not support the audio element.
 	</audio>
@@ -50,10 +50,17 @@
 
 	<script>
 	$(function(){
-		document.getElementsByTagName('audio')[0].play();
 		$('.audio').click(function(){
-			document.getElementsByTagName('audio')[0].pause();
+			if($('#audio').hasClass('on')){
+				document.getElementsByTagName('audio')[0].play();
+				$('#audio').removeClass('on');
+			}else{
+				document.getElementsByTagName('audio')[0].pause();
+				$('#audio').addClass('on');
+			}
+			
 		})
+		
 	    $('.main').fullpage({
 	    	afterLoad: function(anchorLink, index){
 	    		if(index == 2){

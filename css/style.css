@@ -2,14 +2,41 @@
 	position: fixed;
 	right: 20px;
 	top: 40px;
-	width:30px;
-	height:30px;
-	background: url(../img/audio-off.svg) no-repeat;
-	background-size: 30px 30px;
+	width:25px;
+	height:21px;
+	background: url(../img/icon.png) no-repeat 0 -69px;
+	background-size: 150px 150px;
 }
 .audio.active{
-	background: url(../img/audio-on.svg) no-repeat;
-	background-size: 30px 30px;
+	background-position: 0 -97px;
+}
+.arrow{
+	position: fixed;
+	left:50%;
+	bottom: 20px;
+	width:58px;
+	margin-left: -29px;
+	height:58px;
+	border-radius: 30px;
+	background:rgba(0,0,0,0.2);	
+}
+.arrow:before{
+	content: '';
+	position: absolute;
+	left:50%;
+	top:50%;
+	-webkit-transform:translate(-50%,-50%);
+	width: 25px;
+	height: 22px;
+	background:url(../img/icon.png) no-repeat;
+	background-size: 150px 150px;
+	-webkit-animation:arrow 1s linear infinite;
+}
+@-webkit-keyframes arrow{
+	100%{
+		-webkit-transform:translate(-50%,-100%);
+		opacity:0;
+	}
 }
 .visuallyhidden {
   clip: rect(0, 0, 0, 0);

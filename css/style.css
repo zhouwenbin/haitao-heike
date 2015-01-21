@@ -11,6 +11,9 @@
 	background: url(../img/audio-on.svg) no-repeat;
 	background-size: 30px 30px;
 }
+.cover{
+	display: none;
+}
 .section{
 	background-repeat: no-repeat;
 	background-position: center top;

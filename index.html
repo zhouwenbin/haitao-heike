@@ -55,7 +55,20 @@
 	  <source src="audio/audio.mp3" type="audio/mpeg">
 		Your browser does not support the audio element.
 	</audio>
-	<img src="img/audio.png" width="32" class="audio" alt="">
+	<svg version="1.1" class="audio" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+		 width="150px" height="120px" viewBox="0 0 150 120" enable-background="new 0 0 150 120" xml:space="preserve">
+	<g id="icon-sound">
+		
+		<polygon id="sound" fill="none" stroke="#ffffff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+			81.417,11.75 51.417,34.25 12.417,34.25 12.417,82.75 47.417,82.75 81.417,108.25 	"/>
+		<path id="wave_2"  fill="none" stroke="#ffffff" stroke-width="8" stroke-linecap="round" stroke-miterlimit="10" d="
+			M88.168,22.333c0,0,23.332-10.5,36.749,8.417c0,0,28.5,30,0,55.5"/>
+		<path id="wave_1"  fill="none" stroke="#ffffff" stroke-width="8" stroke-linecap="round" stroke-miterlimit="10" d="M77.5,10
+			L103,35.5l3.917,8.75c0,0,11,16,0,32"/>
+		
+		<line id="close_top" class="close_top" fill="none" stroke="#ffffff" stroke-width="8" stroke-linecap="round" stroke-miterlimit="10" x1="103" y1="9" x2="77.5" y2="34.5"/>
+	</g>
+	</svg>
 	<script src="js/jquery-1.10.2.min.js"></script>
 	<script src="lib/fullpage/js/jquery-ui-1.10.3.min.js"></script>
 	<script src="lib/fullpage/js/jquery.fullPage.min.js"></script>
@@ -73,7 +86,34 @@
 			}
 			
 		})		
-	    $('.main').fullpage();		
+	    $('.main').fullpage();
+	    var cosa = $('#sound').attr('class');
+
+		$('.audio').on('click',function(){
+
+
+		  if($('#sound').attr('class') == 'sound_cliked'){  
+		     
+		    
+		    $('#sound').attr('class', 'sound');
+		    $('#wave_1').attr('class', 'wave_1'); 
+		    $('#wave_2').attr('class', 'wave_2');
+		    $('#close_top').attr('class', 'close_top');
+		    
+		    
+
+		  }else {
+		    
+		    $('#sound').attr('class', 'sound_cliked');
+		    $('#wave_1').attr('class', 'wave_1_cliked');
+		    $('#wave_2').attr('class', 'wave_2_cliked');
+		    $('#close_top').attr('class', 'close_top_cliked');
+		    
+		  }
+
+
+
+		});
 	});
 	</script>
 </body>

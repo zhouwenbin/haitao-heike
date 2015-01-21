@@ -262,10 +262,7 @@ img{
 	-webkit-animation:section3-superman 0.5s linear 1s forwards;
 }
 @-webkit-keyframes section3-superman{
-	70%,90%{
-		opacity:0.5;
-	}
-	60%,80%,100%{
+	100%{
 		opacity:1;
 	}
 }

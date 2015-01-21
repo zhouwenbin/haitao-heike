@@ -20,28 +20,40 @@
 		</section>
 		
 		<section class="section section2">
-			
+			<img src="img/section2-smoke.png" class="section2-smoke">
+			<img src="img/section2-superman.png" class="section2-superman">
+			<img src="img/section2-baby.png" class="section2-baby">
+			<img src="img/section2-focus.png" class="section2-focus">
+			<img src="img/section2-text.png" class="section2-text">
+			<img src="img/section2-smoke2.png" class="section2-smoke2">
 		</section>
-		<section class="section section3">
-			
-
+		<section class="section section3">		
+			<img src="img/section3-superman.jpg" class="section3-superman">
+			<img src="img/section3-text.png" class="section3-text">
+			<img src="img/section3-baby.png" class="section3-baby">
 			
 		</section>
 		<section class="section section4">
-			
+			<img src="img/section4-smoke.png" class="section4-smoke">
+			<img src="img/section4-superman.png" class="section4-superman">
+			<img src="img/section4-text.png" class="section4-text">
+			<img src="img/section4-smoke2.png" class="section4-smoke2">
+			<img src="img/section4-toy.png" class="section4-toy">
 			
 		</section>
 		<section class="section section5">
-			
+			<img src="img/section5-light.jpg" class="section5-light">
+			<img src="img/section5-eye.png" class="section5-eye">
+			<img src="img/section5-text.png" class="section5-text">
 			
 		</section>
 		<section class="section section6">
 			
 		</section>
 	</div>
-	<audio id="audio" class="on" loop>
+	<audio id="audio" loop>
 	  <source src="audio/audio.mp3" type="audio/mpeg">
-	Your browser does not support the audio element.
+		Your browser does not support the audio element.
 	</audio>
 	<img src="img/audio.png" width="32" class="audio" alt="">
 	<script src="js/jquery-1.10.2.min.js"></script>
@@ -50,47 +62,18 @@
 
 	<script>
 	$(function(){
+		var audio=$('#audio');
 		$('.audio').click(function(){
-			if($('#audio').hasClass('on')){
-				document.getElementsByTagName('audio')[0].play();
-				$('#audio').removeClass('on');
-			}else{
-				document.getElementsByTagName('audio')[0].pause();
-				$('#audio').addClass('on');
+			if(audio.hasClass('on')){
+				audio[0].pause();
+				audio.removeClass('on');
+			}else{				
+				audio[0].play();
+				audio.addClass('on');
 			}
 			
-		})
-		
-	    $('.main').fullpage({
-	    	afterLoad: function(anchorLink, index){
-	    		if(index == 2){
-					$('.section2').append('<img src="img/section2-smoke.png" class="section2-smoke">'+
-					'<img src="img/section2-superman.png" class="section2-superman">'+
-					'<img src="img/section2-baby.png" class="section2-baby">'+
-					'<img src="img/section2-focus.png" class="section2-focus">'+
-					'<img src="img/section2-text.png" class="section2-text">'+
-					'<img src="img/section2-smoke2.png" class="section2-smoke2">')
-				}
-				if(index == 3){
-					$('.section3').append('<img src="img/section3-superman.jpg" class="section3-superman">'+
-					'<img src="img/section3-text.png" class="section3-text">'+
-					'<img src="img/section3-baby.png" class="section3-baby">')
-				}
-				if(index == 4){
-					$('.section4').append('<img src="img/section4-smoke.png" class="section4-smoke">'+
-					'<img src="img/section4-superman.png" class="section4-superman">'+
-					'<img src="img/section4-text.png" class="section4-text">'+
-					'<img src="img/section4-smoke2.png" class="section4-smoke2">'+
-					'<img src="img/section4-toy.png" class="section4-toy">');
-				}
-				if(index == 5){
-					$('.section5').append('<img src="img/section5-light.jpg" class="section5-light">'+
-					'<img src="img/section5-eye.png" class="section5-eye">'+
-					'<img src="img/section5-text.png" class="section5-text">');
-				}
-			}
-	    });
-		
+		})		
+	    $('.main').fullpage();		
 	});
 	</script>
 </body>

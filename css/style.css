@@ -2,7 +2,7 @@
 	position: fixed;
 	left: 10px;
 	top: 0px;
-	width: 40px;
+	opacity:0.5;
 }
 .section{
 	background-repeat: no-repeat;

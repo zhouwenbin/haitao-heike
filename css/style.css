@@ -4,11 +4,11 @@
 	top: 40px;
 	width:25px;
 	height:21px;
-	background: url(../img/icon.png) no-repeat 0 -69px;
+	background: url(../img/icon.png) no-repeat 0 -97px;
 	background-size: 150px 150px;
 }
 .audio.active{
-	background-position: 0 -97px;
+	background-position: 0 -69px;
 }
 .arrow{
 	position: fixed;
@@ -149,30 +149,28 @@ img{
 .section1-baby{
 	width:59.84%;
 	right: 0;
-	bottom:0;
-	-webkit-transform:translate3d(0,300px,0);
+	bottom:-300px;
 }
 .active .section1-baby{
 	-webkit-animation: section1-baby 1s 1.5s forwards;
 }
 @-webkit-keyframes section1-baby{
 	100%{
-		-webkit-transform:translate3d(0,0,0);
+		bottom:0;
 	}
 }
 
 .section2-text{
 	width:57.19%;
 	left: 39.46%;
-	top: 0;
-	-webkit-transform:translate3d(0,-300px,0);
+	top: -300px;
 }
 .active .section2-text{
 	-webkit-animation:section2-text 0.5s linear 2.5s forwards;
 }
 @-webkit-keyframes section2-text{
 	100%{
-		-webkit-transform:translate3d(0,77px,0);
+		top:77px;
 	}
 }
 .section2-focus{
@@ -197,7 +195,7 @@ img{
 	left: 0;
 	top: 84px;
 	opacity: 0;
-	-webkit-transform:translate3d(320px,0,0);
+	left:50%;
 }
 .active .section2-superman{
 	-webkit-animation:section2-superman 0.5s linear 2s forwards;
@@ -205,7 +203,7 @@ img{
 @-webkit-keyframes section2-superman{
 	100%{
 		opacity: 1;
-		-webkit-transform:translate3d(0,0,0);
+		left:0;
 	}
 }
 .section2-smoke{
@@ -240,15 +238,14 @@ img{
 .section3-text{
 	width:63.12%;
 	left: 5.93%;
-	top: 0;
-	-webkit-transform:translate3d(0,-300px,0);
+	top: -300px;
 }
 .active .section3-text{
 	-webkit-animation:section3-text 0.5s linear 1.5s forwards;
 }
 @-webkit-keyframes section3-text{
 	100%{
-		-webkit-transform:translate3d(0,82px,0);
+		top:82px;
 	}
 }
 
@@ -346,15 +343,14 @@ img{
 .section5-text{
 	width:70.94%;
 	left: 14.53%;
-	bottom:0;
-	-webkit-transform:translate3d(0,300px,0);
+	bottom:-300px;
 }
 .active .section5-text{
 	-webkit-animation:section5-text 0.5s linear 2s forwards;
 }
 @-webkit-keyframes section5-text{
 	100%{
-		-webkit-transform:translate3d(0,-42px,0);
+		bottom:42px;
 	}
 }
 .section5-eye{

@@ -165,7 +165,7 @@ img{
 	width:57.19%;
 	left: 39.46%;
 	top: 0;
-	-webkit-transform:translate3d(0,-200px,0);
+	-webkit-transform:translate3d(0,-300px,0);
 }
 .active .section2-text{
 	-webkit-animation:section2-text 0.5s linear 2.5s forwards;
@@ -241,7 +241,7 @@ img{
 	width:63.12%;
 	left: 5.93%;
 	top: 0;
-	-webkit-transform:translate3d(0,-200px,0);
+	-webkit-transform:translate3d(0,-300px,0);
 }
 .active .section3-text{
 	-webkit-animation:section3-text 0.5s linear 1.5s forwards;
@@ -347,7 +347,7 @@ img{
 	width:70.94%;
 	left: 14.53%;
 	bottom:0;
-	-webkit-transform:translate3d(0,-200px,0);
+	-webkit-transform:translate3d(0,300px,0);
 }
 .active .section5-text{
 	-webkit-animation:section5-text 0.5s linear 2s forwards;

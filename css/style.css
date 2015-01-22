@@ -34,7 +34,7 @@
 }
 @-webkit-keyframes arrow{
 	100%{
-		-webkit-transform:translate(-50%,-100%);
+		top:0;
 		opacity:0;
 	}
 }
@@ -172,7 +172,7 @@ img{
 }
 @-webkit-keyframes section2-text{
 	100%{
-		-webkit-transform:translate3d(0,77px,0);
+		top:77px;
 	}
 }
 .section2-focus{
@@ -248,7 +248,7 @@ img{
 }
 @-webkit-keyframes section3-text{
 	100%{
-		-webkit-transform:translate3d(0,82px,0);
+		top:82px;
 	}
 }
 
@@ -354,7 +354,7 @@ img{
 }
 @-webkit-keyframes section5-text{
 	100%{
-		-webkit-transform:translate3d(0,-42px,0);
+		bottom:42px;
 	}
 }
 .section5-eye{
@@ -382,7 +382,7 @@ img{
 }
 @-webkit-keyframes section6-text{
 	50%{
-		top: 54.27%;
+		top: 591px;
 		-webkit-transform:rotate(0deg);
 	}
 	60%{
@@ -402,6 +402,6 @@ img{
 	}
 	100%{
 		-webkit-transform:rotate(0deg);
-		top: 54.27%;
+		top: 591px;
 	}
 }
